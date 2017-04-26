@@ -4,6 +4,45 @@ var lives = 2;
 
 
 // Define your ghosts here
+var inky = {
+  menu_option: '1',
+  name: 'Inky',
+  colour: 'Red',
+  character: 'Shadow',
+  edible: false
+}
+var blinky = {
+  menu_option: '2',
+  name: 'Blinky',
+  colour: 'Cyan',
+  character: 'Speedy',
+  edible: false
+}
+var pinky = {
+  menu_option: '3',
+  name: 'Pinky',
+  colour: 'Pink',
+  character: 'Bashful',
+  edible: false
+}
+var clyde = {
+  menu_option: '4',
+  name: 'Clyde',
+  colour: 'Orange',
+  character: 'Pokey',
+  edible: false
+}
+
+ghosts = [];
+
+function eatGhost() {
+  if edible == false
+
+  else {
+
+  }
+  end
+}
 
 // replace this comment with your four ghosts setup as objects
 
@@ -29,7 +68,12 @@ function displayStats() {
 function displayMenu() {
   console.log('\n\nSelect Option:\n');  // each \n creates a new line
   console.log('(d) Eat Dot');
+  console.log('(1) Inky, Red, Shadow');
+  console.log('(2) Blinky, Cyan, Speedy');
+  console.log('(3) Pinky, Pink, Bashful');
+  console.log('(4) Clyde, Orange, Pokey');
   console.log('(q) Quit');
+
 }
 
 function displayPrompt() {
@@ -55,6 +99,7 @@ function processInput(key) {
     case 'd':
       eatDot();
       break;
+
     default:
       console.log('\nInvalid Command!');
   }
